@@ -10,7 +10,7 @@ const contentDiv = document.getElementById('content');
 
 async function init() {
   try {
-    const response = await fetch('./reflection-tree.json');
+    const response = await fetch('../tree/reflection-tree.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
